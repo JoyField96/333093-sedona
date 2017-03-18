@@ -7,18 +7,17 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo"><img src="http://placehold.it/102x83?text=Sedona" alt="City of Sedona"></div>
-      <nav class="page-menu page-menu--mobile">
+      <nav class="page-menu">
         <div class="page-menu__wrapper">
-          <div class="page-menu__btn page-menu__btn--close"></div>
+          <a href="#" class="page-menu__btn page-menu__btn--close"></a>
           <ul class="page-menu__items">
-            <li class="page-menu__item"><a class="page-menu__item-link" href="index.html">Главная</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link" href="photo.html">Фото и видео</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link">Форма отзыва</a></li>
-            <li class="page-menu__item"><a class="page-menu__item-link" href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
+            <li class="page-menu__item"><a class="page-menu__item-link" href="#">Главная</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link" href="#">Фото и видео</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link" href="#">форма отзыва</a></li>
+            <li class="page-menu__item"><a class="page-menu__item-link" href="#">html academy</a></li>
           </ul>
         </div>
-        <div class="page-menu__btn page-menu__btn--toggle"></div>
+        <a href="" class="page-menu__btn page-menu__btn--toggle"></a>
       </nav>
     </header>
 
@@ -38,42 +37,42 @@
     </section>
 
     <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
-      <fieldset class="form-section common__container">
-        <legend class="common__title form-section__title">Представьтесь:</legend>
+      <fieldset class="form-section">
+        <legend class="form-section__title">Представьтесь:</legend>
         <p class="form-section__line">
           <label for="first-name" class="common__text form-section__label">Имя<sup>*</sup>:</label>
-          <input id="first-name" class="form-section__line-input" type="text" name="first-name" placeholder="Петр" required>
+          <input id="first-name" class="form-section__input" type="text" name="first-name" placeholder="Петр" required>
         </p>
         <p class="form-section__line">
           <label for="last-name" class="common__text form-section__label">Фамилия<sup>*</sup>:</label>
-          <input id="last-name" class="form-section__line-input" type="text" name="last-name" placeholder="Иванов" required>
+          <input id="last-name" class="form-section__input" type="text" name="last-name" placeholder="Иванов" required>
         </p>
         <p class="form-section__line">
           <label for="middle-name" class="common__text form-section__label">Отчество:</label>
-          <input id="middle-name" class="form-section__line-input" type="text" name="middle-name" placeholder="Александрович">
+          <input id="middle-name" class="form-section__input" type="text" name="middle-name" placeholder="Александрович">
         </p>
       </fieldset>
 
-      <fieldset class="form-section common__container">
-        <legend class="common__title form-section__title">Контактная информация:</legend>
+      <fieldset class="form-section ">
+        <legend class="form-section__title">Контактная информация:</legend>
         <div class="form-section__line">
-          <label for="phone-number" class="common__text form-section__line-label">Контактный телефон<sup>*</sup>:</label>
-          <span class="form-section__line-wrapper">
-            <input id="phone-number" class="form-section__line-input" type="tel" name="phone-number" placeholder="Введите телефон" required><span class="form-section__line-input-icon"></span>
+          <label for="phone-number" class="common__text form-section__label">Контактный телефон<sup>*</sup>:</label>
+          <span class="form-section__wrapper">
+            <input id="phone-number" class="form-section__input" type="tel" name="phone-number" placeholder="Введите телефон" required><span class="form-section__input-icon"></span>
           </span>
         </div>
         <p class="form-section__wrong-value">Ошибка, перепроверьте номер</p>
         <p class="form-section__line">
-          <label for="e-mail" class="common__text form-section__line-label">Электронная почта<sup>*</sup>:</label>
-          <span class="form-section__line-wrapper">
-            <input id="e-mail" class="form-section__line-input" type="email" name="e-mail" placeholder="Введите e-mail" required>
-            <span class="form-section__line-input-icon"></span>
+          <label for="e-mail" class="common__text form-section__label">Электронная почта<sup>*</sup>:</label>
+          <span class="form-section__wrapper">
+            <input id="e-mail" class="form-section__input" type="email" name="e-mail" placeholder="Введите e-mail" required>
+            <span class="form-section__input-icon"></span>
           </span>
         </p>
       </fieldset>
 
-      <fieldset class="form-section common__container">
-        <legend class="common__title form-section__title">Ваше общее впечатление:</legend>
+      <fieldset class="form-section">
+        <legend class="form-section__title">Ваше общее впечатление:</legend>
         <p class="form-section__line">
           <input id="reaction-1" class="form-section__radio" type="radio" name="reaction" value="positive" checked>
           <label for="reaction-1" class="form-section__check-label">Скорее положительное</label>
@@ -88,8 +87,8 @@
         </p>
       </fieldset>
 
-      <fieldset class="form-section common__container">
-        <legend class="common__title form-section__title">Посещенные достопримечательности:</legend>
+      <fieldset class="form-section">
+        <legend class="form-section__title">Посещенные достопримечательности:</legend>
         <p class="form-section__line">
           <input id="attraction-1" class="form-section__checkbox" type="checkbox" name="attraction" value="Devil`s Bridge">
           <label for="attraction-1" class="feedback-field__check-field-label">Мост Дьявола</label>
@@ -108,8 +107,8 @@
         </p>
       </fieldset>
 
-      <fieldset class="form-section common__container">
-        <legend class="form-section__title common__title">Опишите свои эмоции:</legend>
+      <fieldset class="form-section">
+        <legend class="form-section__title">Опишите свои эмоции:</legend>
         <textarea class="form-section__textarea" name="emotions" cols="27" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <button class="common__btn" type="submit">Отправить отзыв</button>
@@ -121,22 +120,21 @@
           <a class="common__title common__title--big page-footer__hashtag-link" href="#">#visitsedona</a>
         </section>
         <section class="page-footer__socials">
-          <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--tw" href="#">Twitter</a>
-          <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--fb" href="#">Facebook</a>
-          <a class="common__btn common__btn--social page-footer__social-link page-footer__social-link--yt" href="#">Youtube</a>
+          <a class="common__btn common__btn--social common__btn--tw" href="#">Twitter</a>
+          <a class="common__btn common__btn--social common__btn--fb" href="#">Facebook</a>
+          <a class="common__btn common__btn--social common__btn--yt" href="#">Youtube</a>
         </section>
         <section class="page-footer__copy">
-          <a class="common__text page-footer__copy-link" href="https://htmlacademy.ru">
-            Разработано <span class="page-footer__copy-icon"></span>
+          <a class="common__text page-footer__copy-link" href="https://htmlacademy.ru">Разработано <span class="page-footer__copy-icon"></span>
           </a>
         </section>
       </div>
     </footer>
 
     <article class="popup popup--error">
-      <div class="common__container popup__wrapper">
-        <h2 class="common__title popup__title">Что-то пошло не так!</h2>
-        <p class="common__text popup__text">
+      <div class="popup__container popup__wrapper">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
         <div class="popup-error__btn-wrapper">
@@ -146,9 +144,9 @@
     </article>
 
     <article class="popup popup--success">
-      <div class="common__container popup__wrapper">
-        <h2 class="common__title popup__title">Ваш отзыв отправлен!</h2>
-        <p class="common__text popup__text">
+      <div class="popup__container popup__wrapper">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">
           Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
         </p>
         <div class="popup-success__btn-wrapper">
